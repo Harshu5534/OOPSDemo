@@ -6,10 +6,10 @@ namespace OOPS
     {
         static void Main (string[] args)
         {
-            Console.WriteLine("Welcome To Inventory Management");
-            const string INVENTORY_DATA_PATH = @"E:\VisualPractise\OOPS\InventoryDataManagement\Inventory.json";
+            Console.WriteLine("---------Welcome To Inventory Management");
+            const string INVENTORY_DATA_PATH = @"E:\VisualPractise\OOPSDemo\OOPS\InventoryDataManagement\Inventory.json";
             InventoryManagement inventory = new InventoryManagement();
-            Console.WriteLine("Display\n");
+            Console.WriteLine("Select Number\n1.Display\n");
             bool check = true;
             while(check)
             {
