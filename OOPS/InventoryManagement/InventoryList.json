@@ -1,0 +1,53 @@
+{
+  "RiceList":[
+    {
+      "Name": "Basmati",
+      "Weight": 10,
+      "PricePerKg": 100
+    },
+    {
+      "Name": "Kolan",
+      "Weight": 12,
+      "PricePerKg": 70
+    },
+    {
+      "Name": "chinur",
+      "Weight": 15,
+      "PricePerKg": 80
+    }
+  ],
+  "WheatList": [
+    {
+      "Name": "Lokvan",
+      "Weight": 50,
+      "PricePerKg": 2500
+    },
+    {
+      "Name": "Sarbati",
+      "Weight": 40,
+      "PricePerKg": 2000
+    },
+    {
+      "Name": "KalyanSona",
+      "Weight": 60,
+      "PricePerKg": 1800
+    },
+  ],
+  "PulsesList":[
+      {
+        "Name": "BlackGram",
+        "Weight": 15,
+        "PricePerKg": 100
+      },
+      {
+        "Name": "GreenGram",
+        "Weight": 18,
+        "PricePerKg": 85
+      },
+      {
+        "Name": "BengalGram",
+        "Weight": 20,
+        "PricePerKg": 90
+      }
+  ]
+}

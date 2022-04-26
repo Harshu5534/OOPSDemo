@@ -13,5 +13,20 @@
     "Name": "Wheat",
     "Weight": 5,
     "PricePerKg": 50
+  },
+  {
+    "Name": "Tomato",
+    "Weight": 6,
+    "PricePerKg": 40
+  },
+  {
+    "Name": "Apple",
+    "Weight": 2,
+    "PricePerKg": 100
+  },
+  {
+    "Name": "Orange",
+    "Weight": 7,
+    "PricePerKg": 80
   }
- ]
+]

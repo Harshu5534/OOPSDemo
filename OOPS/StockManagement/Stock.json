@@ -1,0 +1,18 @@
+[
+  {
+    "StockName": "Reliance",
+    "NumOfShares": 15,
+    "SharePrice": 2000
+  },
+  {
+    "StockName": "ICICIBank",
+    "NumOfShares": 15,
+    "SharePrice": 1000
+  },
+  {
+    "StockName": "AdhaniPorts",
+    "NumOfShares": 50,
+    "SharePrice": 909
+  }
+
+]

@@ -11,4 +11,6 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
+  <ProjectExtensions><VisualStudio><UserProperties inventorydatamanagement_4inventory_1json__JsonSchema="https://appsemble.app/api.json" /></VisualStudio></ProjectExtensions>
+
 </Project>
