@@ -1,5 +1,5 @@
 {
-  "RiceList":[
+  "RiceList": [
     {
       "Name": "Basmati",
       "Weight": 10,
@@ -31,23 +31,23 @@
       "Name": "KalyanSona",
       "Weight": 60,
       "PricePerKg": 1800
-    },
+    }
   ],
-  "PulsesList":[
-      {
-        "Name": "BlackGram",
-        "Weight": 15,
-        "PricePerKg": 100
-      },
-      {
-        "Name": "GreenGram",
-        "Weight": 18,
-        "PricePerKg": 85
-      },
-      {
-        "Name": "BengalGram",
-        "Weight": 20,
-        "PricePerKg": 90
-      }
+  "PulsesList": [
+    {
+      "Name": "BlackGram",
+      "Weight": 15,
+      "PricePerKg": 100
+    },
+    {
+      "Name": "GreenGram",
+      "Weight": 18,
+      "PricePerKg": 85
+    },
+    {
+      "Name": "BengalGram",
+      "Weight": 20,
+      "PricePerKg": 90
+    }
   ]
 }

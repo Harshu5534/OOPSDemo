@@ -26,11 +26,12 @@ namespace OOPS.InventoryDataManagement
         {
             StreamReader reader = new StreamReader(filePath);
             var json = reader.ReadToEnd();
-            Console.WriteLine("Enter Item Name To Edit Data");
             var name = JsonConvert.DeserializeObject<List<InventoryData>>(json);
+            Console.WriteLine("Enter Item Name To Edit Data");
+            string Name1 = Console.ReadLine();
             foreach (var data in name)
             {
-                if (data.Name.Equals(name))
+                if (data.Name.Equals(Name1))
                 {
                     Console.WriteLine("Edit a item\n1.Name\n2.Weight\n3.PricePerKg");
                     int option = Convert.ToInt32(Console.ReadLine());
@@ -54,6 +55,8 @@ namespace OOPS.InventoryDataManagement
                     }
 
                 }
+                string output = JsonConvert.SerializeObject(data);
+                File.WriteAllText(filePath, output);
             }
         }
     }

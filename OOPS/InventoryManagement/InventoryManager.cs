@@ -21,19 +21,16 @@ namespace OOPS.InventoryManagement
             this.wheatList = details.WheatList;
             this.pulsesList = details.PulsesList;
         }
-        public void DisplayInventory(string filePath)
-        {
-            using (StreamReader reader = new StreamReader(filePath))
-            {
-                var json = reader.ReadToEnd();
-                var inventory = JsonConvert.DeserializeObject<List<InventoryDetails>>(json);
-                Console.WriteLine("RiceList" + "\t" + "WheatList" + "\t" + "PulsesList");
-                foreach (var data in inventory)
-                {
-                    Console.WriteLine(data.RiceList + "\t" + data.WheatList + "\t" + data.PulsesList );
-                }
-            }
-        }
+       //// public void DisplayInventory(string filePath)
+       //// public void DisplayInventory(string filePath)
+       // {
+       //     using (StreamReader reader = new StreamReader(filePath))
+       //     {
+       //         var json = reader.ReadToEnd();
+       //         var inventory = JsonConvert.DeserializeObject<InventoryDetails>(json);
+       //         this.riceList=
+       //     }
+       // }
         public void AddInventory(InventoryData data, string inventoryName, string filepath)
         {
             if (inventoryName.Equals("Rice"))
@@ -58,13 +55,13 @@ namespace OOPS.InventoryManagement
             details.PulsesList = pulsesList;
             factory.WriteToJson(filepath, details);
         }
-        public void EditInventory(string inventoryName,string rice,string filepath)
+        public void EditInventory(string inventoryName,string Grains,string filepath)
         {
             if (inventoryName.Equals("Rice"))
             {
                 foreach (var data in riceList)
                 {
-                    if (data.Equals(rice))
+                    if (data.Equals(Grains))
                     {
                         Console.WriteLine("Edit a item\n1.Name\n2.Weight\n3.PricePerKg");
                         int option = Convert.ToInt32(Console.ReadLine());
@@ -91,21 +88,59 @@ namespace OOPS.InventoryManagement
             }
             if (inventoryName.Equals("Wheat"))
             {
-                foreach (var data in riceList)
+                foreach (var data in wheatList)
                 {
-                    if (data.Equals(rice))
+                    if (data.Equals(Grains))
                     {
-                        Console.WriteLine("Enter option to edit");
+                        Console.WriteLine("Edit a item\n1.Name\n2.Weight\n3.PricePerKg");
+                        int option = Convert.ToInt32(Console.ReadLine());
+                        switch (option)
+                        {
+                            case 1:
+                                string Name = Console.ReadLine();
+                                data.Name = Name;
+                                break;
+                            case 2:
+                                int weight = Convert.ToInt32(Console.ReadLine());
+                                data.Weight = weight;
+                                break;
+                            case 3:
+                                int PricePerKg = Convert.ToInt32(Console.ReadLine());
+                                data.PricePerKg = PricePerKg;
+                                break;
+                            default:
+                                Console.WriteLine("Enter Correct Option");
+                                break;
+                        }
                     }
                 }
             }
             if (inventoryName.Equals("Pulses"))
             {
-                foreach (var data in riceList)
+                foreach (var data in pulsesList)
                 {
-                    if (data.Equals(rice))
+                    if (data.Equals(Grains))
                     {
-                        Console.WriteLine("Enter option to edit");
+                        Console.WriteLine("Edit a item\n1.Name\n2.Weight\n3.PricePerKg");
+                        int option = Convert.ToInt32(Console.ReadLine());
+                        switch (option)
+                        {
+                            case 1:
+                                string Name = Console.ReadLine();
+                                data.Name = Name;
+                                break;
+                            case 2:
+                                int weight = Convert.ToInt32(Console.ReadLine());
+                                data.Weight = weight;
+                                break;
+                            case 3:
+                                int PricePerKg = Convert.ToInt32(Console.ReadLine());
+                                data.PricePerKg = PricePerKg;
+                                break;
+                            default:
+                                Console.WriteLine("Enter Correct Option");
+                                break;
+                        }
                     }
                 }
             }
